@@ -6,6 +6,16 @@ public class PrintLeftStarPattern {
 
         int count = 6;
 
+        for(int i=0; i<count; i++){
+
+            for(int j=i; j<count; j++){
+                System.out.print(i);
+            }
+            System.out.println();
+
+
+        }
+
 
 
     }
