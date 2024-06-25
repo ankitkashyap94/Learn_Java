@@ -8,6 +8,10 @@ public class PrintLeftStarPattern {
 
         
         //Learn WebHooks
+
+        //Learn WebHooks
+        //Learn WebHooks
+        //Learn WebHooks
         for(int i=0; i<count; i++){
 
             for(int j=i; j<count; j++){
