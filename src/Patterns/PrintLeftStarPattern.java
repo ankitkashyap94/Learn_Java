@@ -9,6 +9,7 @@ public class PrintLeftStarPattern {
         
         //Logic added New Comment
         //Logic added New Comment
+        //Logic added New Comment
         for(int i=0; i<count; i++){
 
             for(int j=i; j<count; j++){
