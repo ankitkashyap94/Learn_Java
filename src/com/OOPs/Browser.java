@@ -1,4 +1,4 @@
-package OOPs;
+package com.OOPs;
 
 public class Browser {
     public void navigate(){
