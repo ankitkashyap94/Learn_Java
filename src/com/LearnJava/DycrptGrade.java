@@ -1,5 +1,6 @@
 package com.LearnJava;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DycrptGrade {
@@ -32,12 +33,23 @@ public class DycrptGrade {
 //
 //        System.out.printf("The value of a is %d and value of b is %f",a,b);
 
-        String name = "My name is Ankit";
+        String name = "My <|name|> is Ankit";
+        String name2 = "Ankit";
         System.out.println(name.substring(2, name.length()-2));
 
+        System.out.println(name.replace('n','p'));
+        System.out.println(name.replace("kit", "x"));
+        System.out.println(name.startsWith("My"));
+        System.out.println(name.endsWith("t"));
+        System.out.println(name.indexOf("n"));
+        System.out.println(name.lastIndexOf("n"));
+        System.out.println(name.indexOf("is", 4));
+        System.out.println(name.equals("Ankit"));
+        System.out.println(name.replace(" ", "_"));
 
 
-
+        name = name.replace("<|name|>", "Ankit");
+        System.out.println(name);
 
 
 
