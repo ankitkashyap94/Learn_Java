@@ -9,33 +9,25 @@ public class RockPaperScissor {
 
         Scanner sc = new Scanner(System.in);
 
-        int i = 0;
-        int j = 0;
-        while (i < 5) {
+        System.out.print("0. Rock \t 1. Paper \t 2. Scissor");
+        System.out.println();
+        System.out.println("Enter Your Choice");
+        int userIn = sc.nextInt();
 
-            String[] moves = {"Rock", "Paper", "Scissor"};
+        Random random = new Random();
+        int compIn = random.nextInt(3);
 
-            System.out.println("Let Computer to choose its move.");
-
-            System.out.println();
-
-            String computerMove = moves[new Random().nextInt(moves.length)];
-
-            System.out.println("Computer has chosen its move");
-
-            System.out.println(computerMove);
-
-
-            System.out.println("Now ! its your turn to choose the move");
-
-            String userMove = sc.nextLine();
-
-            System.out.println("User has chosen its move");
-            System.out.println();
-
-
+        if(userIn<3){
+            if(userIn == compIn){
+                System.out.println("Draw");
+            }else if(userIn == 0 && compIn == 1 || userIn == 1 && userIn == 0 || userIn == 2 && userIn == 1){
+                System.out.println("You Win");
+            }else {
+                System.out.println("Computer Wins");
+            }
+        }else{
+            System.out.println(new IllegalArgumentException("Value is invalid"));
         }
-
 
     }
 }

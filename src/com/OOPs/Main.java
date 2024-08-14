@@ -11,12 +11,12 @@ public class Main {
 
       /*  var browser = new Browser();
         browser.navigate();*/
-        new Employee(10_000);
-        Employee emp = new Employee(50_000, 0);
-        System.out.println(Employee.numberOfEmployees);
-        Employee.printNumberOfEmployees();
-        int wage = emp.calculateWage();
-        System.out.println(wage);
+//        new empData(10_000);
+//        empData emp = new empData(50_000, 0);
+//        System.out.println(empData.numberOfEmployees);
+//        empData.printNumberOfEmployees();
+//        int wage = emp.calculateWage();
+//        System.out.println(wage);
 
 
 

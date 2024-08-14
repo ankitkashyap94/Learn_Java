@@ -1,5 +1,7 @@
 package Patterns;
 
+import java.util.Scanner;
+
 public class SinglyLinklistUsingArray {
 
     private static ListNode head;
@@ -9,21 +11,24 @@ public class SinglyLinklistUsingArray {
         private static int data;
         private ListNode next;
 
+
+
+
         public ListNode(int data) {
+
             this.data = data;
             this.next = null;
         }
     }
 
     public void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int i = sc.nextInt();
+
         SinglyLinklistUsingArray sl = new SinglyLinklistUsingArray();
-        sl.head = new ListNode(10);
-
-        int[] arrData = {15, 45, 85, 21, 52, 33, 25, 62};
-        String[] nodeName = {"first", "second", "third", "forth", "fifth", "sixth", "seventh", "eigth", "ninth", "tenth"};
-
-
-
+        sl.head = new ListNode(i);
 
     }
 
