@@ -6,9 +6,14 @@ class MyMainEmployee {
     private String name;
 
     //This is constructor or MyMainEmployee Class
-    public MyMainEmployee() {
-        id = 45;
-        name = "My name is not defined";
+    public MyMainEmployee(String name, int id) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public MyMainEmployee(String name, int id, String newName) {
+        this.id = id;
+        this.name = name;
     }
 
     public void setId(int id) {
@@ -31,9 +36,10 @@ class MyMainEmployee {
 
 public class LearnConstructors {
     public static void main(String[] args) {
-        MyMainEmployee myMain = new MyMainEmployee();
-        myMain.setId(25);
-        myMain.setName("Ankit");
+        MyMainEmployee myMain = new MyMainEmployee("Ankit", 33, "This is new Constructors");
+        MyMainEmployee myMain1 = new MyMainEmployee("Ankit", 33);
+//        myMain.setId(25);
+//        myMain.setName("Ankit");
         System.out.println(myMain.getId());
         System.out.println(myMain.getName());
     }
