@@ -27,13 +27,12 @@ class Employee{
 public class GettersAndSetters {
 
     public static void main(String[] args) {
+
         Employee emp = new Employee();
         emp.setEmpName("Ankit");
         emp.setId(25);
         System.out.println(emp.getEmpName());
         System.out.println(emp.getId());
-
-
 
     }
 

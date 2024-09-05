@@ -36,7 +36,7 @@ class Game {
 
 
     public boolean guessNumber() {
-        boolean result = false;
+
         if (userInput > computerInput) {
             System.out.println("Your number is higher");
             counter++;
@@ -50,7 +50,7 @@ class Game {
             System.out.println("Your score is: " + counter);
             return true;
         }
-        return result;
+        return false;
     }
 
 
