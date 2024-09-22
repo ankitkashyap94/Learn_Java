@@ -11,12 +11,12 @@ public class FabonacciSeries {
         int b = 1;
         int count = 10;
 
-        System.out.println(a);
-        System.out.println(b);
+        System.out.print(a+" ");
+        System.out.print(b+" ");
 
         for (int i = 0; i <= count - 2; i++) {
             int c = a + b;
-            System.out.println(c);
+            System.out.print(c+" ");
             int temp = a;
             a = b;
             b = c;
